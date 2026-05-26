@@ -20,8 +20,8 @@ import torch
 
 from models.mimo_unet import MIMOUNet
 
-# MODEL_PATH = Path(__file__).resolve().parent / "models" / "MIMO-UNet.pkl"
-MODEL_PATH = Path(__file__).resolve().parent / "models" / "best.pth"
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "MIMO-UNet.pkl"
+# MODEL_PATH = Path(__file__).resolve().parent / "models" / "best.pth"
 _TILE = 512
 _OVERLAP = 32
 

@@ -207,39 +207,40 @@ NRC-HybridNet 是唯一有效超越 baseline 的方案：PSNR +2.3 dB、SSIM +0.
 ### HAP-Deblur
 数据集评估（序列级共享核，推荐）：
 ```bash
-D:\anaconda3\python.exe d:\work\sight\evaluate_wiener.py
+python evaluate_wiener.py
 ```
 批量图像（多进程）：
 ```bash
-D:\anaconda3\python.exe d:\work\sight\process_media.py `
-  --input d:\work\sight\GOPRO_Large\train\GOPR0372_07_00\blur_gamma `
-  --output d:\work\sight\out_images `
+python process_media.py `
+  --input test_image `
+  --output out_image `
   --workers 4
 ```
 视频处理（首帧估核 + 时域融合）：
 ```bash
-D:\anaconda3\python.exe d:\work\sight\process_media.py `
+python process_media.py `
   --input input.mp4 --output output.mp4
 ```
 启用细节增强阶段：
 ```bash
-D:\anaconda3\python.exe d:\work\sight\evaluate_wiener.py --super-resolve
+python evaluate_wiener.py --super-resolve
 ```
 
 ### NRC-HybridNet
 数据集评估
 ```bash
-D:\anaconda3\envs\yolov8\python.exe d:\work\sight\evaluate_dl_deblur.py
+python evaluate_dl_deblur.py
 ```
 批量图像
 ```bash
-D:\anaconda3\envs\yolov8\python.exe d:\work\sight\process_media.py `
-  --method dl --input d:\work\sight\GOPRO_Large\train\GOPR0372_07_00\blur_gamma `
-  --output d:\work\sight\out_dl
+python process_media.py `
+  --method dl `
+  --input test_image `
+  --output out_image
 ```
 
 # 视频（限帧跑）
 ```bash
-D:\anaconda3\envs\yolov8\python.exe d:\work\sight\process_media.py `
-  --method dl --input d:\work\sight\1.mp4 --output d:\work\sight\output_dl.mp4 --max-frames 100
+python process_media.py `
+  --method dl --input 1.mp4 --output output_dl.mp4 --max-frames 100
 ```
