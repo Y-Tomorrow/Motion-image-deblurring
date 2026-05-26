@@ -1,0 +1,2 @@
+filter,cutoff,order,count,mean_psnr,mean_ssim,mean_time_ms
+ideal_hpf,30.0,2,100,6.377756004056324,0.05313846452195631,605.3754790000312

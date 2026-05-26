@@ -1,0 +1,16 @@
+# 数据集（本地使用，不上传）
+GOPRO_Large/
+GOPRO_Large.zip
+
+# 视频
+*.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
