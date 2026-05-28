@@ -65,7 +65,7 @@ $$
 \text{PSNR} = 10 \cdot \log_{10}\!\left(\frac{\text{MAX}^2}{\text{MSE}}\right)
 $$
 
-其中 $N$ 为像素总数，$\text{MAX}$ 为像素最大值（8 位图像取 255）。
+其中 $N$ 为像素总数，$\mathrm{MAX}$ 为像素最大值（8 位图像取 255）。
 
 - PSNR 越高，像素越接近参考图
 - 一般 >30 dB 较好，>40 dB 很好
